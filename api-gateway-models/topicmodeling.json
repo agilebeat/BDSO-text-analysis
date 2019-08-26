@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TopicInputModel",
+  "type": "object",
+  "properties": {
+    "topic_number": { "type": "integer" },
+    "words_number": { "type": "integer" },
+    "post_documents": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Post"
+      }
+    }
+  },
+  "definitions": {
+    "Post" : {
+      "type": "object",
+      "properties": {
+        "post_id": { "type": "string" },
+        "post_body": { "type": "string" }
+      }
+    }
+  }
+}

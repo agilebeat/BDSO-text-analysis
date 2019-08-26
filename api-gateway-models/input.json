@@ -1,0 +1,7 @@
+{
+	"type":"object",
+	"properties": {
+		"post_content":{"type":"string"}
+	},
+	"title":"Input"
+}
