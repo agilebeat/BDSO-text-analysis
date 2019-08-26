@@ -65,8 +65,8 @@ docker container and have shell terminal: `root@<IMAGE-ID>:/root/bdso/BDSO-senti
 
 #### Step 2. Testing the lambda function
 
-**1. Singplep Post analysis:**  
-The sinplepost function computes whether document contains positive, negative, or positive sentiment 
+**1. Single Post analysis:**  
+The singlepost.py function computes whether document contains positive, negative, or positive sentiment 
 by scoring it ('VADER' python library is used - *https://www.geeksforgeeks.org/python-sentiment-analysis-using-vader/*).  
 The function requires a single document as a parameter ("post content") and returns 
 "post", "polarity" (positive/negative/neutral), and sentiment "score".
@@ -86,7 +86,7 @@ then the function returns
  the documents is 'positive' or 'negative' respectively, and zero score means 'neutral.'
 
 **2. Barplot**  
-The barplot function presents keywords frequently quoted from the cleaned documents where 
+The barplot.py function presents keywords frequently quoted from the cleaned documents where 
 non-critical information such as stopwords, special characters, username etc. is removed and then lemmatized.
 The sample output is as follows. 
 
