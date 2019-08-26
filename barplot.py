@@ -39,7 +39,7 @@ def word_barchart(post_cleaned):
     word_freq_df = word_freq_df.nlargest(columns="Count", n=10)
     plt.figure(figsize=(16, 5))
     ax = sns.barplot(data=word_freq_df, x="Key_Words", y="Count")
-    ax.set_title('Top 10 Most Frequent Hashtags in Positive Tweets')
+    ax.set_title('Top 10 Most Frequent Keywords')
     ax.set(ylabel='Count')
 
     output = StringIO()
